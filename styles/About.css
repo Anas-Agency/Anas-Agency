@@ -1,0 +1,220 @@
+.About {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent,#c71340);
+  border-radius: 6px;
+}
+/*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent,#fff);
+}*/
+
+.About h1 {
+  font-size: 45px;
+  margin-top: 200px;
+}
+
+#About-W {
+  margin-bottom: 100px;
+}
+
+.cv-button {
+  margin-left: 20px;
+}
+/*
+.cv-button {
+  margin-left: 20px;
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.cv-button:after {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+}
+
+.cv-button:hover:after {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+} */
+
+.about-me-D {
+  text-align: center;
+  margin-top: 20px;
+  width: 55%;
+  font-size: x-large;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.about-me-D1 {
+  margin-bottom: 1%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.about-me-D2 .about-me-D1 {
+  margin-bottom: 1%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.about-buttons-container {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.intrests {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+#Interests-h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#WorkedW-h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45%;
+  margin-bottom: 50px;
+  background-color: var(--c3);
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+/* .cv-button,
+  .buttonA {
+    font-size: 14px;
+    padding: 8px 10px;
+
+    transform: none;
+    writing-mode: horizontal-tb;
+  } */
+
+
+@media (max-width: 768px) {
+  .About h1 {
+    font-size: 32px;
+    margin-top: 100px;
+  }
+
+  #About-W {
+    margin-bottom: 50px;
+  }
+
+  /* .cv-button,
+  .buttonA {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 8px 10px;
+    transform: none;
+    writing-mode: horizontal-tb;
+  } */
+  
+  .about-me-D {
+    font-size: 15px;
+    width: 80%;
+  }
+  .about-me-D1 {
+    font-size: 15px;
+    width: 80%;
+  }
+  .about-me-D2 {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .interests {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .svg1 
+  {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+
+  }
+  
+  #Interests-h1 {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  #WorkedW-h1 {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .companies {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+
+  .about-buttons-container {
+    width: 90%;
+  }
+}

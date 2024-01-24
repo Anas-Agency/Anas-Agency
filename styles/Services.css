@@ -1,0 +1,184 @@
+.service-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1%;
+  visibility: hidden; /* Adjust the duration and easing function as needed */
+  opacity: 0;
+  transform: translateX(30px);
+  transition: var(--animaSpeed) ease;
+
+}
+
+.Content {
+  background-image: url(../files/grou012.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 45%;
+  border-radius: 5px;
+  background-color: var(--c3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button-sx1 {
+  margin-top: 30px;
+} 
+
+.buttonC {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.service-section:hover {
+  cursor: pointer;
+}
+
+.service-section h1 {
+  display: flex;
+  align-items: center;
+}
+
+.service-wrapper h1 {
+  font-weight: 400;
+}
+
+.Services-W {
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.service-section p {
+  text-align: center;
+}
+
+.flip {
+  writing-mode: vertical-lr;
+}
+
+.AccountM {
+  width: 100%;
+}
+
+.Sex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 54%;
+  margin: 50px;
+}
+
+.Sex-D {
+  font-size: large;
+}
+
+.Sex-h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AccountM1 {
+  margin-top: 40px;
+}
+
+.Sex-D-circles{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+/* .Sex-D-circles div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+
+@media (max-width: 768px) {
+  .scroll-wrapper {
+    overflow: hidden;
+  }
+  .Services-W {
+    font-size: 32px;
+    margin-top: 40px;
+
+  }
+
+  .service-section {
+    margin-bottom: 0.35%;
+    width: 95%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(-10px);
+  }
+  
+  .service-wrapper {
+    display: block;
+  }
+
+  .Sh1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .SD1 {
+    font-size: 15px;
+  }
+
+  .service-section:nth-child(2) {
+    /* background: lightgreen; */
+    margin-top: 2.8%;
+  }
+
+  .AccountM,.DigitalM,.ContentW,.Programming,.GraphicD
+   {
+    display: flex;
+    /* width: 80%; */
+  }
+
+.Sex {
+  width: 80%;
+  font-size: 15px;
+}
+
+.Sex-h1 {
+  font-size: 26px;
+}
+
+.Sex-D {
+  width: 100%;
+  font-size: 15px;
+}
+
+.AccountM1-D {
+  width: 100%;
+}
+.Sex-D-circles {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+}

@@ -1,0 +1,132 @@
+.Skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../files/Group1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Skills h1 {
+  font-size: 45px;
+}
+
+.skilla {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: var(--animaSpeed) ease;
+}
+.langSkilla {
+  visibility: hidden; /* Adjust the duration and easing function as needed */
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.skills-heading {
+  margin-top: 5px;
+}
+
+.skilla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.langSkilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skillText {
+  margin: 20px;
+  font-size: larger;
+  /*  transition: margin-left 1s ease-out; */
+}
+
+.lang-skills-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 20px;
+}
+.skills-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  
+  /* .Skills {
+    display: block;
+    background-size: contain;
+  }
+
+  .skilla,
+  .langSkilla {
+    width: 80%;
+  }
+
+  .skills-heading {
+    text-align: center;
+  }
+
+  .skilla,
+  .langSkilla,
+  .skillText,
+  .lang-skills-wrapper,
+  .skills-wrapper {
+    width: 80%;
+  } */
+
+  .Skills h1 {
+    margin-top: 30px;
+  }
+
+  .Skills {
+    overflow-y: scroll;
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  }
+
+.skills-wrapper{
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.skilla{
+  width: fit-content;
+  font-size: 13px;
+  width: 98%;
+}
+.Skills h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.langSkilla{
+  width:fit-content;
+}
+.skillText{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Skills .button{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+}

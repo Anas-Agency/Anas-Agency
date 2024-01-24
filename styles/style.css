@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ 
+:root {
+  --c1: #ffffff;
+  --c2: #c71340;
+  --c3: #12161b;
+  --c4: #0a0c0f;
+  --animaSpeed:1s;
+  --animationSpeed: 200ms;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  color: var(--c1);
+  background-color: var(--c4);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/*
+.center1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+*/
+/*
+.ring1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+*/
+/*
+span {
+  color: #c71340;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 200px;
+}
+*/
+.ring1:before {
+  position: absolute;
+  content: 'sex';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rg;
+}
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100vw); /* Adjust the size as needed */
+  grid-template-rows: repeat(3, 100vh); /* Adjust the size as needed */
+  grid-gap: 10px;
+  z-index: -20;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--c4);
+  /* border: 2px solid var(--c1); */
+}
+
+.logo {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.hi-welcome {
+  font-size: 60px;
+}
+
+.title {
+  margin: 60px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.paragraph {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.changinText {
+  font-weight: 200;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* Adjust the size as needed */
+  grid-gap: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--animaSpeed) ease;
+}
+
+.button a {
+  all: unset;
+  text-decoration: none;
+}
+
+.button {
+  background-color: var(--c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--c2);
+  border-radius: 13px;
+  width: 200px;
+  font-size: 20px;
+  padding: 15px;
+  transition: var(--animationSpeed) ease;
+  box-shadow: 0 0 5px #c71340, 0 0 25px #c71340;
+}
+
+.button:hover {
+  border: 3px solid var(--c1);
+  cursor: pointer;
+}
+
+.siktir {
+  all: unset;
+}
+.siktir:hover {
+  all: unset;
+}
+
+.red {
+  color: var(--c2);
+}
+
+/*why is this not working .icon*/
+/* cuz u r stupid. */
+.Main {
+  background-image: url(../files/Logob.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.underline {
+  position: relative;
+  font-size: 2em;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Adjust the distance of the underline from the text */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 4px;
+  background-color: var(--c2); /* Change the color of the underline as needed */
+}
+
+.languages-h1::after {
+  bottom: -11px;
+}
+/* .logo {
+  position: absolute;
+  top: 10px;
+} */
+
+.show {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translate(0px,0px) !important;
+}
+
+
+@media (max-width: 768px) {
+
+  .Main {
+    /* width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background: transparent;
+  }
+
+  .logo {
+    width: auto; 
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin: 35px 0 ;
+  }
+
+  .hi-welcome {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .paragraph,
+  .changinText {
+    width: auto;
+    text-align: center;
+  }
+
+  .paragraph {
+    font-size: 25px;
+  }
+
+  .changinText {
+    font-size: 23px;
+  }
+
+  .buttonContainer {
+    width: auto; 
+    display: block;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mbutton {
+    font-size: 24px;
+    margin: 18px;
+    border-radius: 18px;
+  }
+}
